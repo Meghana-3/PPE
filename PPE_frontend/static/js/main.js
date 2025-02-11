@@ -1,5 +1,5 @@
 // Constants
-const API_URL = 'http://localhost:8000';
+const API_URL = 'https://ppe-kit-h2c2eudahngfcdf4.canadacentral-01.azurewebsites.net';
 
 // DOM Elements
 const fileInput = document.getElementById('file-input');
@@ -29,7 +29,7 @@ function initializeWebSocket() {
         ws.close();
     }
 
-    ws = new WebSocket('ws://localhost:8000/ws');
+    ws = new WebSocket('wss://ppe-kit-h2c2eudahngfcdf4.canadacentral-01.azurewebsites.net/ws');
     
     ws.onopen = () => {
         console.log('WebSocket connection established');
